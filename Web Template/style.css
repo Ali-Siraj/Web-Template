@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: radial-gradient(circle, rgba(31, 0, 36, 0.9528186274509804) 19%, rgba(35, 9, 121, 1) 57%, rgba(0, 255, 171, 1) 100%);
+}
+/* =========================== SCROLLBAR ==================== */
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-track{
+    background-color: #333333;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: linear-gradient(rgb(0, 255, 123),rgb(0, 0, 255));
+}
+
+/* ======================== HEADER SECTION START ================== */
+.header-div {
+    background: linear-gradient(90deg, rgba(244, 243, 251, 1) 20%, rgba(219, 213, 216, 1) 55%, rgba(201, 201, 199, 1) 96%);
+    width: 100%;
+    height: 5rem;
+}
+
+#page-icon {
+    margin: 16px 0px 0px 12px;
+    cursor: pointer;
+}
+
+#wrong-icon {
+    position: absolute;
+    top: 1.5em;
+    right: 12px;
+    cursor: pointer;
+}
+
+/* ======================== HEADER SECTION END ================== */
+
+/* ===================== MAIN BODY SECTION START ====================== */
+.main-div {
+    width: 100vw;
+    height: 40vh;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.heading-box {
+    color: white;
+    font-size: 1.5em;
+    margin: 65px;
+    margin-bottom: 10px;
+}
+
+.para-box {
+    text-align: center;
+    margin: 30px;
+}
+
+p {
+    color: white;
+    font-size: 1.2em;
+}
+
+/* ================== MAIN SECOND-DIV FLEX CONTAINER STARTED ================== */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.flex-item-one {
+    border: 1px solid black;
+    width: 24vw;
+    height: 73vh;
+    margin: 15px;
+    text-align: center;
+    background: linear-gradient(40deg, rgba(222, 212, 120, 1) 30%, rgba(119, 224, 83, 1) 60%, rgba(46, 210, 156, 1) 100%);
+    border-radius: 40px;
+    border: none;
+}
+
+.flex-item-two {
+    border: 1px solid black;
+    width: 24vw;
+    height: 73vh;
+    margin: 15px;
+    text-align: center;
+    background: linear-gradient(40deg, rgba(153, 132, 221, 1) 20%, rgba(210, 151, 199, 1) 55%, rgba(223, 145, 93, 1) 96%);
+    border-radius: 40px;
+    border: none;
+}
+
+.flex-item-three {
+    border: 1px solid black;
+    width: 24vw;
+    height: 73vh;
+    margin: 15px;
+    text-align: center;
+    background: linear-gradient(40deg, rgba(102, 245, 113, 1) 20%, rgba(224, 122, 122, 1) 55%, rgba(208, 159, 51, 1) 96%);
+    border-radius: 40px;
+    border: none;
+}
+
+.flex-item-para {
+    font-size: 1.5em;
+}
+
+.para-align {
+    margin-top: 30%;
+    margin-bottom: 10px;
+}
+
+.dollar {
+    font-size: 3em;
+}
+
+button {
+    width: 165px;
+    height: 50px;
+    font-weight: 900;
+    font-size: 0.9em;
+    color: #333333;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(rgb(219, 215, 210), rgb(238, 200, 200));
+    transition: 0.5s;
+}
+
+hr {
+    width: 195px;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 30px 60px;
+    align-items: center;
+    border: 1px solid white;
+}
+
+/* ========================= MEDIA QUERY START ======================== */
+@media screen and (max-width:1200px) {
+    .flex-item-one {
+        width: 40%;
+    }
+
+    .flex-item-two {
+        width: 40%;
+    }
+
+    .flex-item-three {
+        width: 40%;
+    }
+
+    hr {
+        width: 67%;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .flex-item-one {
+        width: 90%;
+    }
+
+    .flex-item-two {
+        width: 90%;
+    }
+
+    .flex-item-three {
+        width: 90%;
+    }
+
+    hr {
+        width: 75%;
+    }
+
+}
+
+@media screen and (max-width:330px) {
+    .flex-item-one {
+        width: 20%;
+    }
+
+    .flex-item-two {
+        width: 20%;
+    }
+
+    .flex-item-three {
+        width: 20%;
+    }
+
+    hr {
+        width: 20%;
+    }
+}
+
+/* ================== MAIN SECOND-DIV FLEX CONTAINER ENDED ================ */
+/* ======================== MAIN BODY SECTION END ====================== */
+
+
+/* ====================== FOOTER SECTION START ====================== */
+.footer-div {
+    width: 100%;
+    height: 5.6rem;
+    background: linear-gradient(90deg, rgba(73, 70, 91, 1) 20%, rgba(55, 46, 50, 1) 55%, rgba(57, 62, 52, 1) 96%);
+    text-align: center;
+}
+
+.footer-child {
+    display: flex;
+    justify-content: center;
+    top: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: aqua;
+}
+
+.footer-para {
+    display: inline-block;
+    margin: 30px;
+}
+
+.footer-a {
+    display: inline-block;
+    margin: 30px;
+}
+
+/* ====================== FOOTER SECTION END ===================== */
